@@ -9,6 +9,8 @@
         // class creation from outside this class
         private SingletonLazy() { }
 
+        // Instance property returning a lazyly initialized instance
+        // using double null check and lock
         public static SingletonLazy Instance
         {
             get
